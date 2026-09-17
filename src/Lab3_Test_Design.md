@@ -1,7 +1,7 @@
 # Lab Three: Test Design
 ## `calculateStayPrice(int nights, int guestAge, boolean isArkansasResident, boolean hasVeteranDiscount)`
 
-Pricing logic (from `ReserveMyPark.java`):
+Pricing logic (from `IK.ReserveMyPark.java`):
 - Base price = `nights * $50`
 - Child (age 0–12): 50% off
 - Adult (age 13–64): full price

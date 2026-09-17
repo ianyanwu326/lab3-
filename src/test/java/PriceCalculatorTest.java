@@ -1,6 +1,7 @@
-import com.baarsch_bytes.Exceptions.GuestAgeReservationException;
-import com.baarsch_bytes.Exceptions.NightReservationException;
-import com.baarsch_bytes.Exceptions.ReservationException;
+import com.IK.ReserveMyPark;
+import com.IK.Exceptions.GuestAgeReservationException;
+import com.IK.Exceptions.NightReservationException;
+import com.IK.Exceptions.ReservationException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -42,7 +43,7 @@ class StayPriceCalculatorTest {
             "7,  30, true,  true,  306.0"    // rule R4: resident then veteran
     })
     void testValidPriceCalculations(int nights, int guestAge, boolean isArkansasResident,
-                                    boolean hasVeteranDiscount, double expectedPrice) throws ReservationException {
+                                    boolean hasVeteranDiscount, double expectedPrice) throws Exception {
         double actual = calculator.calculateStayPrice(nights, guestAge, isArkansasResident, hasVeteranDiscount);
         assertEquals(expectedPrice, actual, DELTA);
     }

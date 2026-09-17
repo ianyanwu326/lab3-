@@ -1,4 +1,4 @@
-//Exceptions.NightReservationException;
+package com.IK;//Exceptions.NightReservationException;
 
 public class ReserveMyPark {
 
